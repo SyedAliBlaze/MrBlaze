@@ -1,3 +1,9 @@
+/* Import the custom font */
+@font-face {
+    font-family: 'Stark Italic';
+    src: url('fonts/Stark_Italic.otf') format('opentype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,43 +11,75 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
-    line-height: 1.6;
+    font-family: 'Stark Italic', Arial, sans-serif;
+    color: #fff;
+    background-color: #1A1A1D;
+    line-height: 1.8;
     padding: 20px;
 }
 
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: #333;
-    color: white;
+    background-color: #A41E34; /* Hotrod Red */
+    color: #FFD700; /* Gold color */
 }
 
 header h1 {
+    font-size: 4em;
+    color: #FFD700; /* Gold color */
     margin-bottom: 5px;
 }
 
-header p a {
-    color: #4da6ff;
+header p, header p a {
+    color: #FFD700; /* Gold color */
+    font-size: 1.3em;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header p a:hover {
+    color: #87CEEB; /* Sky blue color */
+}
+
+/* Profile picture styling */
+.profile-img {
+    width: 150px; /* Adjust the width of the image */
+    height: 150px; /* Make the height equal to the width to keep it square */
+    border-radius: 50%; /* Make the image round */
+    margin-top: 15px; /* Add some space above the image */
+    border: 3px solid #FFD700; /* Gold border around the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Hover effect */
+.profile-img:hover {
+    border-color: #87CEEB; /* Sky blue border color when hovered */
 }
 
 section {
     margin: 20px 0;
+    padding: 20px;
+    border-left: 6px solid #00509E; /* Spider-Man blue */
+    background-color: #4d4d4d;
 }
 
 section h2 {
-    font-size: 1.4em;
-    color: #555;
+    font-size: 1.8em;
+    color: #FFD700; /* Gold color */
     margin-bottom: 10px;
-    border-bottom: 2px solid #333;
+    border-bottom: 3px solid #A41E34; /* Hotrod Red underline */
     padding-bottom: 5px;
+}
+
+.objective-text {
+    font-size: 1.5em; /* Increased font size for visibility */
 }
 
 ul {
     list-style-type: none;
+    font-size: 1.3em;
 }
 
 ul li {
@@ -50,8 +88,29 @@ ul li {
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     margin-top: 20px;
-    background-color: #333;
-    color: white;
+    background-color: #A41E34; /* Hotrod Red */
+    color: #FFD700; /* Gold */
+    font-size: 1.2em;
+}
+
+/* Light mode styles */
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-mode header {
+    background-color: #f4a261; /* Light orange */
+    color: #000;
+}
+
+body.light-mode section {
+    background-color: #eaeaea; /* Light gray */
+}
+
+body.light-mode footer {
+    background-color: #f4a261; /* Light orange */
+    color: #000;
 }

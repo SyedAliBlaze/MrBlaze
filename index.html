@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Ali N - CV</title>
+    <title>Syed Ali N's CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>Syed Ali N</h1>
+        <h1>Syed Ali N.</h1>
         <p>Thodiyil Veedu, Gandhi Nagar - 72, Ayathi P.O., Kollam, Kerala. Pin 691021</p>
-        <p>Phone: +91 9037170415 | Email: <a href="mailto:blazingsyedali451@gmail.com">blazingsyedali451@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/SyedAliBlaze" target="_blank">github.com/SyedAliBlaze</a></p>
+        <p>+919037170415 | <a href="mailto:blazingsyedali451@gmail.com">blazingsyedali451@gmail.com</a></p>
+        <p><a href="https://github.com/SyedAliBlaze" target="_blank">GitHub Profile</a></p>
+
+        <!-- Profile Picture -->
+        <img src="fonts/pro_pic.jpg" alt="Syed Ali N" class="profile-img">
     </header>
 
     <section id="objective">
         <h2>Objective</h2>
-        <p>To work in an environment which encourages me to succeed and grow professionally where I can utilize my skills and knowledge appropriately.</p>
+        <p class="objective-text">To work in an environment which encourages me to succeed and grow professionally where I can utilize my skills and knowledge appropriately.</p>
     </section>
 
-    <section id="education">
+    <section>
         <h2>Education</h2>
         <ul>
-            <li><strong>Younus College of Engineering and Technology, APJ Abdul Kalam Technological University</strong><br>B.Tech in Computer Science and Engineering (2021 - 2025)</li>
-            <li><strong>Sree Narayana Trust Higher Secondary School, Kollam</strong><br>Class XII - 81% (2021)</li>
-            <li><strong>Krist Raj Higher Secondary School, Kollam</strong><br>Class X - 80% (2019)</li>
+            <li>Younus College of Engineering and Technology, APJ Abdul Kalam Technological University - B.Tech in Computer Science and Engineering (2021 - 2025)</li>
+            <li>Sree Narayana Trust Higher Secondary School, Kollam - Class XII (2021, 81%)</li>
+            <li>Krist Raj Higher Secondary School, Kollam - Class X (2019, 80%)</li>
         </ul>
     </section>
 
-    <section id="skills">
+    <section>
         <h2>Skills</h2>
         <ul>
             <li>Java</li>
@@ -39,15 +43,15 @@
         </ul>
     </section>
 
-    <section id="projects">
+    <section>
         <h2>Projects</h2>
         <ul>
-            <li><strong>College Event Management</strong><br>Developed a web application for college event management using Java and SQL, enabling the admin (HOD) to add/delete events and others to view events.</li>
-            <li><strong>Academic Assistance Chatbot</strong><br>Built a chatbot using HTML/CSS, JavaScript (frontend), Flask (backend), and Python, with a predefined JSON format dataset stored in MongoDB.</li>
+            <li>College Event Management: Developed a web application for college event management using Java and SQL where admin (HOD) can add/delete events and others can view events.</li>
+            <li>Academic Assistance Chatbot: Developed a chatbot using HTML/CSS, JavaScript with Flask framework and Python backend, utilizing MongoDB for data storage.</li>
         </ul>
     </section>
 
-    <section id="interests">
+    <section>
         <h2>Interests</h2>
         <ul>
             <li>Driving</li>
@@ -57,7 +61,7 @@
         </ul>
     </section>
 
-    <section id="languages">
+    <section>
         <h2>Languages</h2>
         <ul>
             <li>English</li>
@@ -67,7 +71,7 @@
         </ul>
     </section>
 
-    <section id="personal-details">
+    <section>
         <h2>Personal Details</h2>
         <ul>
             <li>Marital Status: Single</li>
@@ -76,7 +80,7 @@
         </ul>
     </section>
 
-    <section id="softskills">
+    <section>
         <h2>Soft Skills</h2>
         <ul>
             <li>Time Management</li>
@@ -89,8 +93,11 @@
     </section>
 
     <footer>
-        <p>© 2024 Syed Ali N</p>
+        &copy; 2024 Syed Ali N. All rights reserved.
     </footer>
+
+    <!-- Dark/Light Mode Toggle Button -->
+    <button id="theme-toggle" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
 
     <script src="script.js"></script>
 </body>

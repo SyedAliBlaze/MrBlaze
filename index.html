@@ -1,104 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Ali N's CV</title>
+    <title>Syed Ali N - Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="container">
 
-    <header>
-        <h1>Syed Ali N.</h1>
-        <p>Thodiyil Veedu, Gandhi Nagar - 72, Ayathi P.O., Kollam, Kerala. Pin 691021</p>
-        <p>+919037170415 | <a href="mailto:blazingsyedali451@gmail.com">blazingsyedali451@gmail.com</a></p>
-        <p><a href="https://github.com/SyedAliBlaze" target="_blank">GitHub Profile</a></p>
+        <!-- Profile Panel -->
+        <div class="system-window profile">
+            <div class="system-label">Player Stats</div>
+            <img src="icons/pro_pic.jpg" alt="Syed Ali N" class="profile-photo" id="profile-photo">
+            <h1 class="username">Syed Ali N</h1>
 
-        <!-- Profile Picture -->
-        <img src="fonts/pro_pic.jpg" alt="Syed Ali N" class="profile-img">
-    </header>
+            <div class="stats-block">
+                <div class="level-container" id="level-trigger">
+                    <div class="level-number" id="player-level">--</div>
+                    <div class="level-label">LEVEL</div>
+                </div>
+                <div class="stats-details">
+                    <div class="stat-row">
+                        <span class="stat-label">ORIGIN :</span>
+                        <span class="stat-value">Kerala, India</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">STATUS :</span>
+                        <span class="stat-value">ACTIVE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <section id="objective">
-        <h2>Objective</h2>
-        <p class="objective-text">To work in an environment which encourages me to succeed and grow professionally where I can utilize my skills and knowledge appropriately.</p>
-    </section>
+        <!-- Professional Summary Panel -->
+        <div class="system-window summary">
+            <div class="system-label">Professional Summary</div>
+            <div class="summary-content">
+                Building a foundation as a Cybersecurity Novice, my current focus centers on mastering the art of
+                digital defense. This journey involves diving deep into Ethical Hacking to understand the adversary's
+                mindset and neutralize modern threats. I am actively sharpening my technical toolkit through Penetration
+                Testing, learning to identify and patch vulnerabilities before they can be exploited. This transition is
+                powered by my background as a Fullstack Developer. By combining the ability to build complex
+                applications with a security-first mindset, I aim to create more resilient and secure digital
+                environments.
+            </div>
+        </div>
 
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li>Younus College of Engineering and Technology, APJ Abdul Kalam Technological University - B.Tech in Computer Science and Engineering (2021 - 2025)</li>
-            <li>Sree Narayana Trust Higher Secondary School, Kollam - Class XII (2021, 81%)</li>
-            <li>Krist Raj Higher Secondary School, Kollam - Class X (2019, 80%)</li>
-        </ul>
-    </section>
+        <!-- System Access Menu -->
+        <div class="system-window menu">
+            <div class="system-label">System Access</div>
+            <div class="menu-grid">
+                <button class="menu-btn" data-target="education-modal">Education</button>
+                <button class="menu-btn" data-target="certifications-modal">Certifications</button>
+                <button class="menu-btn" data-target="internships-modal">Internships</button>
+                <button class="menu-btn" data-target="experience-modal">Experience</button>
+                <button class="menu-btn" data-target="skills-modal">Skills</button>
+                <button class="menu-btn" data-target="projects-modal">Projects</button>
+                <a href="https://syedaliblaze.github.io/BIO/" class="menu-btn" style="text-decoration: none;">Contact Me</a>
+            </div>
+        </div>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>HTML/CSS</li>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-        </ul>
-    </section>
+        <!-- Section Modals -->
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li>College Event Management: Developed a web application for college event management using Java and SQL where admin (HOD) can add/delete events and others can view events.</li>
-            <li>Academic Assistance Chatbot: Developed a chatbot using HTML/CSS, JavaScript with Flask framework and Python backend, utilizing MongoDB for data storage.</li>
-        </ul>
-    </section>
+        <div class="modal section-modal" id="education-modal">
+            <div class="modal-content system-window">
+                <span class="close">&times;</span>
+                <div class="system-label">Education</div>
+                <div class="education-item">
+                    <div class="edu-header">
+                        <span class="university">APJ Abdul Kalam Technological University</span>
+                        <span class="location">Kerala, IN</span>
+                    </div>
+                    <div class="edu-sub-header">
+                        <span class="degree">Bachelor of Technology (B.Tech) – Computer Science & Engineering</span>
+                        <span class="date">Nov 2021 - Apr 2025</span>
+                    </div>
+                    <div class="coursework">
+                        <span class="stat-label">Relevant Coursework:</span>
+                        <span class="stat-value">Data Structure, Software Engineering, Operating Systems, Algorithms,
+                            Artificial Intelligence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <section>
-        <h2>Interests</h2>
-        <ul>
-            <li>Driving</li>
-            <li>Football</li>
-            <li>Gaming</li>
-            <li>Traveling</li>
-        </ul>
-    </section>
+        <div class="modal section-modal" id="certifications-modal">
+            <div class="modal-content system-window">
+                <span class="close">&times;</span>
+                <div class="system-label">Certifications</div>
+                <ul class="cert-list">
+                    <li class="cert-item">
+                        <span class="cert-name">Offenso Certified Security Professional</span>
+                        <span class="cert-org">- Offenso Hackers Academy</span>
+                        <span class="cert-status">[CURRENTLY PURSUING]</span>
+                    </li>
+                    <li class="cert-item">
+                        <span class="cert-name">Foundations of Cybersecurity</span>
+                        <span class="cert-org">- Google (Coursera)</span>
+                        <span class="cert-status">[CURRENTLY PURSUING]</span>
+                    </li>
+                    <li class="cert-item">
+                        <span class="cert-name">Programming in Java</span>
+                        <span class="cert-org">- NPTEL</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    <section>
-        <h2>Languages</h2>
-        <ul>
-            <li>English</li>
-            <li>Malayalam</li>
-            <li>Tamil</li>
-            <li>Hindi</li>
-        </ul>
-    </section>
+        <div class="modal section-modal" id="internships-modal">
+            <div class="modal-content system-window">
+                <span class="close">&times;</span>
+                <div class="system-label">Internships</div>
+                <div class="intern-item">
+                    <div class="intern-header">
+                        <span class="company">ICT Academy of Kerala</span>
+                        <span class="date">May 2023 - Jun 2023</span>
+                    </div>
+                    <div class="intern-desc">Java Programming Summer Internship</div>
+                    <div class="intern-project">
+                        <span class="stat-label">Project:</span>
+                        <span class="stat-value">Event Management System (Java & MySQL)</span>
+                    </div>
+                </div>
+                <div class="intern-item">
+                    <div class="intern-header">
+                        <span class="company">Techmaghi</span>
+                        <span class="date">May 2023</span>
+                    </div>
+                    <div class="intern-desc">Game Development Internship</div>
+                    <div class="intern-project">
+                        <span class="stat-label">Details:</span>
+                        <span class="stat-value">Familiarized with Unity and actively participated in hands-on
+                            exercises.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <section>
-        <h2>Personal Details</h2>
-        <ul>
-            <li>Marital Status: Single</li>
-            <li>Nationality: Indian</li>
-            <li>Gender: Male</li>
-        </ul>
-    </section>
+        <div class="modal section-modal" id="experience-modal">
+            <div class="modal-content system-window">
+                <span class="close">&times;</span>
+                <div class="system-label">Experience</div>
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <span class="company">TryHackMe Labs</span>
+                        <span class="date">Hands-on Cyber Security Practice</span>
+                    </div>
+                    <ul class="exp-list">
+                        <li>Practiced reconnaissance, enumeration, and vulnerability identification.</li>
+                        <li>Gained experience in Linux-based attack environments.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    <section>
-        <h2>Soft Skills</h2>
-        <ul>
-            <li>Time Management</li>
-            <li>Creative Thinking</li>
-            <li>Communication</li>
-            <li>Smart Working</li>
-            <li>Adaptable</li>
-            <li>Problem Solving</li>
-        </ul>
-    </section>
+        <div class="modal section-modal" id="skills-modal">
+            <div class="modal-content system-window">
+                <span class="close">&times;</span>
+                <div class="system-label">Skills</div>
+                <div class="skill-category">
+                    <div class="stat-label">Cyber Security:</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Ethical Hacking</span>
+                        <span class="skill-tag">Penetration Testing</span>
+                        <span class="skill-tag">Threat Analysis</span>
+                        <span class="skill-tag">Incident Response</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="stat-label">Familiar Tools:</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">Metasploit</span>
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">Burp Suite</span>
+                        <span class="skill-tag">SQLMap</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="stat-label">Programming:</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Javascript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <footer>
-        &copy; 2024 Syed Ali N. All rights reserved.
-    </footer>
+        <div class="modal section-modal" id="projects-modal">
+            <div class="modal-content system-window">
+                <span class="close">&times;</span>
+                <div class="system-label">Projects</div>
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="company">AutoPen - Automated Pentest Tool</span>
+                        <span class="date">Feb 2026</span>
+                    </div>
+                    <div class="project-desc">
+                        An automated penetration testing tool for reconnaissance and high-detail PDF report generation.
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="company">Context-Aware Surveillance Detection</span>
+                        <span class="date">Apr 2025</span>
+                    </div>
+                    <div class="project-desc">
+                        GUI application combining YOLO object detection with super-resolution for image/video
+                        enhancement.
+                        Supports custom models and screenshot saving.
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="company">Academic Assistance Chatbot</span>
+                        <span class="date">May 2024</span>
+                    </div>
+                    <div class="project-desc">
+                        Scalable multi-role chatbot (Admin, Faculty, Student, Guest) built with Flask, MongoDB, and JSON
+                        storage.
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Dark/Light Mode Toggle Button -->
-    <button id="theme-toggle" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+        <!-- Image Modal Refactored to HUD Style -->
+        <div class="modal" id="image-modal">
+            <div class="modal-content profile-hud">
+                <span class="close" id="close-modal">&times;</span>
+                <div class="hud-container">
+                    <div class="hud-portrait">
+                        <img id="expanded-img" src="">
+                    </div>
+                    <div class="hud-stats">
+                        <div class="hud-stat-group">
+                            <span class="hud-label">First Name</span>
+                            <span class="hud-value main-name">Syed Ali N</span>
+                        </div>
+                        <div class="hud-stat-group">
+                            <span class="hud-label">CallSign</span>
+                            <span class="hud-value sub-name">Blaze</span>
+                        </div>
+                        <div class="hud-stat-group">
+                            <span class="hud-label">Job / Class</span>
+                            <span class="hud-value">Student</span>
+                        </div>
+                        <div class="hud-stat-group">
+                            <span class="hud-label">Age</span>
+                            <span class="hud-value" id="hud-age">--</span>
+                        </div>
+                        <div class="hud-stat-group">
+                            <span class="hud-label">Status</span>
+                            <span class="hud-value">ACTIVE</span>
+                        </div>
+                        <div class="hud-stat-group">
+                            <span class="hud-label">Gender</span>
+                            <span class="hud-value">Male</span>
+                        </div>
+                        <div class="hud-stat-group">
+                            <span class="hud-label">Nationality / Origin</span>
+                            <span class="hud-value">India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="countdown-modal">
+            <div class="modal-content countdown-content">
+                <span class="close" id="close-countdown">&times;</span>
+                <div class="countdown-title">Time Until Next Level Upgrade</div>
+                <div class="countdown-timer">
+                    <div class="time-block">
+                        <div id="cd-mo">00</div>
+                        <div class="label">MONTHS</div>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="time-block">
+                        <div id="cd-d">00</div>
+                        <div class="label">DAYS</div>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="time-block">
+                        <div id="cd-h">00</div>
+                        <div class="label">HOURS</div>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="time-block">
+                        <div id="cd-m">00</div>
+                        <div class="label">MINS</div>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="time-block">
+                        <div id="cd-s">00</div>
+                        <div class="label">SECS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome-overlay" id="welcome-overlay">
+            <div class="welcome-modal" id="welcome-modal">
+                <div class="welcome-header">
+                    <span class="info-icon">!</span> ALERT
+                </div>
+                <div class="welcome-body">
+                    [WELCOME, <span class="player-text">PLAYER.</span>]
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>

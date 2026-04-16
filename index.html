@@ -59,12 +59,12 @@
                 <button class="menu-btn" data-target="experience-modal">Experience</button>
                 <button class="menu-btn" data-target="skills-modal">Skills</button>
                 <button class="menu-btn" data-target="projects-modal">Projects</button>
-                <a href="https://syedaliblaze.github.io/BIO/" class="menu-btn" style="text-decoration: none;">Contact Me</a>
+                <a href="https://syedaliblaze.github.io/BIO/" class="menu-btn" style="text-decoration: none;">Contact
+                    Me</a>
             </div>
         </div>
 
         <!-- Section Modals -->
-
         <div class="modal section-modal" id="education-modal">
             <div class="modal-content system-window">
                 <span class="close">&times;</span>
@@ -231,10 +231,14 @@
             </div>
         </div>
 
-        <!-- Image Modal Refactored to HUD Style -->
+        <!-- Image Modal with Glowing Close Button -->
         <div class="modal" id="image-modal">
-            <div class="modal-content profile-hud">
-                <span class="close" id="close-modal">&times;</span>
+            <div class="modal-content profile-hud" id="modal-wrapper">
+                <!-- Glowing Circular Close Button -->
+                <div class="close-container" id="close-modal">
+                    <span class="close-icon">&times;</span>
+                </div>
+
                 <div class="hud-container">
                     <div class="hud-portrait">
                         <img id="expanded-img" src="">
@@ -273,6 +277,7 @@
             </div>
         </div>
 
+        <!-- Countdown Modal -->
         <div class="modal" id="countdown-modal">
             <div class="modal-content countdown-content">
                 <span class="close" id="close-countdown">&times;</span>
@@ -306,6 +311,7 @@
             </div>
         </div>
 
+        <!-- Welcome Alert Modal -->
         <div class="welcome-overlay" id="welcome-overlay">
             <div class="welcome-modal" id="welcome-modal">
                 <div class="welcome-header">

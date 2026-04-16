@@ -460,6 +460,13 @@ body::before {
     transform: scale(0);
 }
 
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+    }
+}
+
+
 .close {
     position: absolute;
     top: 20px;
@@ -1016,7 +1023,51 @@ body::before {
     .hud-portrait {
         height: 300px;
     }
+
+    /* Countdown Modal Adjustments */
+    .countdown-timer {
+        gap: 8px;
+    }
+
+    .time-block div:first-child {
+        font-size: 2.5rem;
+    }
+
+    .colon {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .countdown-title {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
 }
+
+@media (max-width: 480px) {
+    .countdown-timer {
+        gap: 4px;
+    }
+
+    .time-block div:first-child {
+        font-size: 1.8rem;
+    }
+
+    .time-block .label {
+        font-size: 0.55rem;
+        letter-spacing: 1px;
+    }
+
+    .colon {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .countdown-content {
+        padding: 30px 10px;
+    }
+}
+
 
 /* === Image Popup Close Button (Glowing Cyan Circle) === */
 .close-container {
